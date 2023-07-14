@@ -1,6 +1,6 @@
 # TERRAFORM PROJECT
 ## The project is the automation of the process of creating public proxy leading to private servers with the use of load balancer as this architecture:
-![]()
+![](https://github.com/abdulrahman102/Terraform-2-tier-server/blob/master/screenshots/1.png)
 
 ------
 ## With the provided terraform files and modules the process is completed only the user needs to provide the variable needed for attributes and those are :
@@ -18,16 +18,19 @@
 ## TASK:
 ### 1- Screenshot from creating and working on workspace dev.
 
-![]()
+![](https://github.com/abdulrahman102/Terraform-2-tier-server/blob/master/screenshots/2.png)
 
 ### 2- Screenshot from the configuration of the proxy.
 
-![]()
+![](https://github.com/abdulrahman102/Terraform-2-tier-server/blob/master/screenshots/3.png)
 
 ### 3- Screenshot from the public dns of the load balancer when you send a traffic to it from a browser and it returns the content of the private ec2s.
 
-![]()
+![](https://github.com/abdulrahman102/Terraform-2-tier-server/blob/master/screenshots/4-1.png)
+![](https://github.com/abdulrahman102/Terraform-2-tier-server/blob/master/screenshots/4-2.png)
+
 
 ### 4-creenshot from the s3 that contain the state file. 
 
-![]()
+![](https://github.com/abdulrahman102/Terraform-2-tier-server/blob/master/screenshots/5-1.png)
+![](https://github.com/abdulrahman102/Terraform-2-tier-server/blob/master/screenshots/5-2.png)

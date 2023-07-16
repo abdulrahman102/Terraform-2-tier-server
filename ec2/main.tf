@@ -107,7 +107,7 @@ resource "aws_instance" "private" {
   ami = data.aws_ami.ubuntu.id
   instance_type = "t2.micro"
   associate_public_ip_address = false
-  subnet_id = var.private_subnet_ids[count.index / var.instances_number]
+  subnet_id = var.private_subnet_ids[floor(count.index / var.instances_number)]
   security_groups = [aws_default_security_group.sprints_sg.id]
     user_data = <<EOF
 #! /bin/bash

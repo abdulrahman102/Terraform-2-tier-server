@@ -73,7 +73,7 @@ resource "aws_instance" "public" {
   instance_type = "t2.micro"
   associate_public_ip_address = true
   subnet_id = var.public_subnet_ids[count.index / var.instances_number]
-  security_groups = [aws_default_security_group.sprints_sg.id]
+  vpc_security_group_ids = [aws_default_security_group.sprints_sg.id]
     user_data = <<EOF
 #! /bin/bash
 sudo apt-get update
@@ -108,7 +108,7 @@ resource "aws_instance" "private" {
   instance_type = "t2.micro"
   associate_public_ip_address = false
   subnet_id = var.private_subnet_ids[floor(count.index / var.instances_number)]
-  security_groups = [aws_default_security_group.sprints_sg.id]
+  vpc_security_group_ids = [aws_default_security_group.sprints_sg.id]
     user_data = <<EOF
 #! /bin/bash
 sudo apt-get update
